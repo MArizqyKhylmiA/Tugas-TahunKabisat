@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //total detik
+        var totaldetik = prompt("masukan total detik:");
+
+        //menghitung jam, menit,detik
+        var jam = Math.floor(totaldetik / 3600);
+        var sisadetik = totaldetik % 3600;
+        var menit = Math.floor(sisadetik/ 60);
+        var detik = sisadetik % 60
+
+        //menampilkan hasil
+        console.log(`${jam} jam ${menit} menit ${detik} detik`);
+        alert(`${jam} jam ${menit} menit ${detik} detik`);
+    </script>
+</body>
+</html>
