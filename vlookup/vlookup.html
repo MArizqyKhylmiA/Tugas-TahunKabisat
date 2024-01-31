@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // penerimaan siswa baru v tegar
+
+        let nilai = prompt("isi nilai");
+
+        if (nilai <= 100 && nilai >= 90) {
+            console.log("selamat anda lolos");
+        } else if (nilai >= 80 && nilai < 90) {
+            jalur = prompt("mau pilih jalur apa?");
+            if (jalur == ("rapot")) {
+                console.log("anda memilih jalur rapot");
+            } else if (jalur == ("prestasi")) {
+                console.log("anda memilih jalur prestasi");
+            } else;
+        } else {
+            console.log("tes mandiri");
+            hasiltes = prompt("masukan hasil tes");
+            if (hasiltes >= 79 && hasiltes <= 100) {
+                console.log("anda lulus tes");
+            } else {
+                console.log("Maaf, Anda gagal");
+            }
+        }
+
+         // looping
+
+        // for genap
+        for(let z = 0; z <= 10; z+=2 ){
+            console.log('sesuatu', z)
+        }
+
+        // for ganjil
+        for(let u = 1; u <= 27; u+=2 ){
+            console.log('sesuatu', u) 
+
+
+        }
+
+
+         // while genap
+         let q = 0
+        // x sama dengan 1
+        while(q <=10) {
+            // lalu jika x nya kurang dari 10
+            // maka x++ dan munculkan consolog ke layar
+            console.log('abatu', q)
+            q +=2
+        }
+
+        // while ganjil
+        let x = 1
+        // x sama dengan 1
+        while(x <=27) {
+            // lalu jika x nya kurang dari 10
+            // maka x++ dan munculkan consolog ke layar
+            console.log('abatu', x)
+            x +=2
+        }
+
+
+        // do while genap
+        let y = 0
+        // do adalah lakukan apa dulu
+        do {
+            console.log('abatukam ke -', y)
+            y+=2
+        } while (y <= 10)
+
+         // do while ganjil
+         let p = 1
+        // do adalah lakukan apa dulu
+        do {
+            console.log('abatukam ke -', p)
+            p+=2
+        } while (p <= 27)
+
+        
+
+
+    </script>
+
+</body>
+</html>

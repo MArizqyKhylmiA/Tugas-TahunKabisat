@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //cara kenzo
+        //  function tambahSatuDetik(waktu) {
+        //    let [jam, menit, detik] = waktu.split(':').map(Number);
+
+        //    if (detik < 59) {
+        //        detik += 1;
+        //    } else {
+        //        detik = 0;
+        //        if (menit < 59) {
+        //            menit += 1;
+        //        } else {
+        //            menit = 0;
+        //            if (jam < 23) {
+        //                jam += 1;
+        //            } else {
+        //                jam = 0;
+        //            }
+        //        }
+        //    }
+
+   //         return `${jam.toString().padStart(2, '0')}:${menit.toString().padStart(2, '0')}:${detik.toString().padStart(2, '0')}`;
+   //     }
+
+    //    let waktu1 = '02:13:23';
+    //    let waktu2 = '02:13:59';
+    //    let waktu3 = '02:59:59';
+    //    let waktu4 = '23:59:59';
+//
+     //   console.log(`Setelah penambahan 1 detik: ${tambahSatuDetik(waktu1)}`);
+     //   console.log(`Setelah penambahan 1 detik: ${tambahSatuDetik(waktu2)}`);
+     //   console.log(`Setelah penambahan 1 detik: ${tambahSatuDetik(waktu3)}`);
+     //   console.log(`Setelah penambahan 1 detik: ${tambahSatuDetik(waktu4)}`);
+
+     //caraferdy
+
+     function menghitung (datajam, datamenit, datadetik){
+        let totaldetik = datajam *3600 + datamenit * 60 + datadetik;
+        let hasiltotaldetik = totaldetik + 1;
+        let totaljam = (Math.floor(hasiltotaldetik / 3600)% 24);
+        let sisadetik = hasiltotaldetik % 3600;
+        let totalmenit = Math.floor (sisadetik / 60);
+        let second = sisadetik % 60;
+
+        console.log (`${datajam} jam ${datamenit} menit ${datadetik} detik`);
+        console.log (`${totaljam} jam ${totalmenit} menit ${second} detik`)
+     }
+
+     menghitung(2,25,11);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var bilangan = parseInt(prompt("masukan bilangan bulat:"));
+
+        var satuan = bilangan % 10
+        var puluhan = Math.floor((bilangan % 100) / 10);
+        var ratusan = Math.floor(bilangan / 100);
+
+        console.log("Bilangan:" + bilangan)
+        console.log("satuan:" + satuan)
+        console.log("puluhan:" + puluhan)
+        console.log("ratusan:" + ratusan)
+        
+    </script>
+</body>
+</html> 

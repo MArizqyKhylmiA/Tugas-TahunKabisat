@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    var beratbuahgram = prompt("Berat Buah Gram");
+    var hargaperkg = 10;
+
+    var totalhargasebelumdiskon = (beratbuahgram / 1000) * hargaperkg;
+
+    var diskon = 0.05 * totalhargasebelumdiskon;
+    var totalhargasebelumdiskon = totalhargasebelumdiskon - diskon;
+
+    console.log("berat buah yang dibeli" + beratbuahgram + "gram");
+    console.log("harga per kg" + hargaperkg + "rupiah");
+    console.log("total harga sebelum diskon" + totalhargasebelumdiskon + "rupiah");
+    console.log("diskon" + diskon + "rupiah");
+    console.log("total harga sebelum diskon" + totalhargasebelumdiskon + "rupiah");
+
+  </script>
+</body>
+</html>

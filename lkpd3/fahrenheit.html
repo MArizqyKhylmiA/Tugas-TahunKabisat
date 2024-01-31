@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cekCuaca(suhu_fahrenheit){
+            var suhu_celcius = (suhu_fahrenheit) * 5/9;
+
+  if (suhu_celcius > 30) {
+    console.log("panas");
+  } else if (suhu_celcius < 25) {
+    console.log("dingin");
+  } else {
+    console.log("normal");
+  }
+}
+
+var suhu_input = 8;
+cekCuaca(suhu_input);
+    </script>
+</body>
+</html>

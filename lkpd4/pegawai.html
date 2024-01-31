@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cetakInfoPegawai(kodepegawai) {
+
+            var golongan = parseInt(kodepegawai.charAt(0));
+            var tanggal = parseInt(kodepegawai.substr(1,2));
+            var bulan = parseInt(kodepegawai.substr(3, 2));
+            var tahun = parseInt(kodepegawai.substr(5, 4));
+            var nomorurut =parseInt(kodepegawai.substr(9, 2));
+
+            var namabulan = [
+                "januarti", "februari", "maret",
+                "april", "mei", "juni", "juli", "agustus",
+                "september", "oktober", "november", "desember"
+            ];
+
+            var namabulanlahir = namabulan[bulan -1];
+
+            console.log("Nomor Golongan:" +golongan);
+            console.log("Tanggal Lahir:" +tanggal +"" +namabulanlahir +"" +tahun);
+            console.log("Nomor Urut:");
+        }
+        
+        var kodepegawai = "12310200705"
+        cetakInfoPegawai(kodepegawai)
+
+        
+    </script>
+</body>
+</html>
